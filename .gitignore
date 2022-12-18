@@ -39,7 +39,7 @@ app.*.symbols
 *.g.dart
 
 # ignore env files
-/assets/.env
+*.env
 
 # Obfuscation related
 app.*.map.json
