@@ -2,6 +2,7 @@ import 'package:equatable/equatable.dart';
 
 part 'category_bloc.dart';
 
+// contains definition of the various states that the bloc is going to emit
 enum CategoryStatus { initial, success, error, loading, selected }
 
 extension CategoryStatusX on CategoryStatus {
