@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:games_info/repository/models/genre.dart';
 import 'package:games_info/ui/home/widgets/category_widget/bloc/category_bloc.dart';
 
+import 'category_item.dart';
+
 class CategoriesSuccessWidget extends StatelessWidget {
   const CategoriesSuccessWidget({super.key});
 

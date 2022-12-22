@@ -1,6 +1,4 @@
-import 'package:equatable/equatable.dart';
-
-part 'category_bloc.dart';
+part of 'category_bloc.dart';
 
 class CategoryEvent extends Equatable {
   @override

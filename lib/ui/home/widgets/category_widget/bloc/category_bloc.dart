@@ -3,6 +3,8 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:games_info/repository/game_repository.dart';
 
+import '../../../../../repository/models/genre.dart';
+
 part 'category_event.dart';
 part 'category_state.dart';
 
@@ -32,7 +34,7 @@ class CategoryBloc extends Bloc<CategoryEvent, CategoryState> {
     }
   }
 
-  void _mapSelectedCategoryEventToState(
+  void _mapSelectCategoryEventToState(
       SelectCategory event, Emitter<CategoryState> emit) async {
     emit(state.copyWith(
       status: CategoryStatus.selected,
