@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:games_info/repository/game_repository.dart';
 import 'package:games_info/repository/service/game_service.dart';
 
+import '../widgets/category_widget/category_barrel.dart';
 import '../widgets/games_by_category_widget/bloc/games_by_category_bloc.dart';
 
 class HomePage extends StatelessWidget {
