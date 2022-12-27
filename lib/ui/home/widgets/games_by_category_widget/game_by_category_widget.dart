@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:games_info/ui/home/widgets/games_by_category_widget/bloc/games_by_category_bloc.dart';
 import 'game_by_category_barrel.dart';
 
-class GamesByCategory extends StatelessWidget {
-  const GamesByCategory({super.key});
+class GamesByCategoryWidget extends StatelessWidget {
+  const GamesByCategoryWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
