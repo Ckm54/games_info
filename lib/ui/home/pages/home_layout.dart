@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:games_info/ui/home/widgets/header_title/header_title.dart';
 import 'package:games_info/ui/widgets/container_body.dart';
 
 import '../widgets/all_games_widget/all_games_widget.dart';
@@ -14,10 +15,10 @@ class HomeLayout extends StatelessWidget {
       padding: const EdgeInsets.only(top: 80.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+        children: const [
           HeaderTitle(),
-          const SizedBox(height: 40.0),
-          const ContainerBody(
+          SizedBox(height: 40.0),
+          ContainerBody(
             children: [
               CategoriesWidget(),
               GamesByCategoryWidget(),
