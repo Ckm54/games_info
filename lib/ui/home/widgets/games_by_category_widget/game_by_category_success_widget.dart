@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:games_info/repository/models/result.dart';
+import 'package:games_info/ui/home/widgets/games_by_category_widget/game_by_category_image.dart';
 
 class GameByCategorySuccessWidget extends StatelessWidget {
   const GameByCategorySuccessWidget({

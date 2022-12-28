@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:games_info/ui/home/widgets/games_by_category_widget/bloc/games_by_category_bloc.dart';
+import 'package:games_info/ui/widgets/error_widget.dart';
 import 'game_by_category_barrel.dart';
 
 class GamesByCategoryWidget extends StatelessWidget {
@@ -11,7 +11,7 @@ class GamesByCategoryWidget extends StatelessWidget {
     return BlocBuilder<GamesByCategoryBloc, GamesByCategoryState>(
       builder: (context, state) {
         return state.status.isSuccess
-            ? GamesByCategorySuccessWidget(
+            ? GameByCategorySuccessWidget(
                 categoryName: state.categoryName,
                 games: state.games,
               )
@@ -20,7 +20,7 @@ class GamesByCategoryWidget extends StatelessWidget {
                     child: CircularProgressIndicator(),
                   )
                 : state.status.isError
-                    ? ErrorGameWidget()
+                    ? const ErrorGameWidget()
                     : const SizedBox();
       },
     );
