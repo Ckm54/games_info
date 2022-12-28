@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:games_info/repository/models/model_barrel.dart';
+
+import 'all_games_barrel.dart';
 class AllGamesItem extends StatelessWidget {
   const AllGamesItem({
     Key? key,
@@ -34,7 +36,7 @@ class AllGamesItem extends StatelessWidget {
               width: MediaQuery.of(context).size.width * .5,
               child: Text(
                 game.name ?? '',
-                style: TextStyle(
+                style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 14.0,
                 ),
@@ -47,7 +49,7 @@ class AllGamesItem extends StatelessWidget {
             top: 45.0,
             child: Text(
               game.genres?.first.name ?? '',
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 12.0,
               ),
             ),

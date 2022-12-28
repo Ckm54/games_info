@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:games_info/repository/models/result.dart';
 
+import 'all_games_barrel.dart';
+
 class AllGamesSuccessWidget extends StatelessWidget {
   const AllGamesSuccessWidget({
     Key? key,
@@ -20,13 +22,13 @@ class AllGamesSuccessWidget extends StatelessWidget {
           padding: const EdgeInsets.only(left: 24.0),
           child: Text(
             title,
-            style: TextStyle(
+            style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 18.0,
             ),
           ),
         ),
-        Container(
+        SizedBox(
           height:
               ((100 * games.length) + MediaQuery.of(context).size.width) + 24.0,
           child: ListView.separated(
@@ -41,7 +43,7 @@ class AllGamesSuccessWidget extends StatelessWidget {
                 game: games[index],
               );
             },
-            separatorBuilder: (_, __) => SizedBox(
+            separatorBuilder: (_, __) => const SizedBox(
               height: 20.0,
             ),
             itemCount: games.length,
