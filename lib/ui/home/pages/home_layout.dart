@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/all_games_widget/all_games_widget.dart';
+import '../widgets/category_widget/categories_widget.dart';
+import '../widgets/games_by_category_widget/game_by_category_widget.dart';
+
 class HomeLayout extends StatelessWidget {
   const HomeLayout({super.key});
 
@@ -14,9 +18,9 @@ class HomeLayout extends StatelessWidget {
           const SizedBox(height: 40.0),
           ContainerBody(
             children: [
-              CategoriesWidget(),
-              GamesByCategoryWidget(),
-              AllGamesWidget(title: 'All games')
+              const CategoriesWidget(),
+              const GamesByCategoryWidget(),
+              const AllGamesWidget(title: 'All games')
             ]
           ),
         ],
