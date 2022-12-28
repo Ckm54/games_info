@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:games_info/ui/widgets/container_body.dart';
 
 import '../widgets/all_games_widget/all_games_widget.dart';
 import '../widgets/category_widget/categories_widget.dart';
@@ -16,11 +17,11 @@ class HomeLayout extends StatelessWidget {
         children: [
           HeaderTitle(),
           const SizedBox(height: 40.0),
-          ContainerBody(
+          const ContainerBody(
             children: [
-              const CategoriesWidget(),
-              const GamesByCategoryWidget(),
-              const AllGamesWidget(title: 'All games')
+              CategoriesWidget(),
+              GamesByCategoryWidget(),
+              AllGamesWidget(title: 'All games')
             ]
           ),
         ],

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:games_info/ui/home/widgets/all_games_widget/all_games_success_widget.dart';
 import 'package:games_info/ui/home/widgets/all_games_widget/bloc/all_games_bloc.dart';
+import 'package:games_info/ui/widgets/error_widget.dart';
 
 class AllGamesWidget extends StatelessWidget {
   const AllGamesWidget({
@@ -25,7 +26,7 @@ class AllGamesWidget extends StatelessWidget {
                     child: CircularProgressIndicator(),
                   )
                 : state.status.isError
-                    ? ErrorGameWidget()
+                    ? const ErrorGameWidget()
                     : const SizedBox();
       },
     );
